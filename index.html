@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FIAPFLIX</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <header class="header">  
+            <h1 class="page-title">FIAPFLIX</h1>   
+        </header>
+
+        <main>
+            <div class="form">
+                <h2 class="page-subtitle">CADASTRAR FILMES</h2>
+                <div class="nome">
+                    <label for="nome">Nome do filme: <br>
+                        <input type="text" name="nome" id="nome" placeholder="Filme">
+                    </label>
+                </div>
+                <div class="link">
+                    <label for="link">Link do filme: <br>
+                        <input type="text" name="link" id="link" placeholder="www.site.com">
+                    </label>
+                </div>
+                <button id="botao" type="submit" onclick="cadastrar()">Salvar</button>
+                <p id="erro"></p>
+            </div>
+            
+            <div class="catalogo">
+                <h2>Minha lista:</h2>
+                <div id="catalogo-filmes">
+                    <div>
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt8yNufq2Jp9-D4BrCYYW5Y_jm8HXRE6NDczXQbTjV-5DMBS4o" alt="">
+                        <p class="texto">The Batman</p>
+                    </div>
+                    <!--
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/c/c0/La_La_Land_%28filme%29.png" alt="">
+                        <p class="texto">La La Land: Cantando Estações</p>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/0/0e/Star_Wars_The_Last_Jedi.png" alt="">
+                        <p class="texto">Star Wars: Os Últimos Jedi</p>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/9/9f/Sonic_the_Hedgehog_2019.jpg" alt="">
+                        <p class="texto">Sonic: O Filme</p>
+                    </div>
+                    <div>
+                        <img src="https://br.web.img2.acsta.net/pictures/21/12/21/10/49/4342577.jpg" alt="">
+                        <p class="texto">Animais Fantásticos: Os Segredos de Dumbledore</p>
+                    </div>
+                    <div>
+                        <img src="https://seuladogeek.com.br/wp-content/uploads/2022/03/O-Projeto-Adam-filme-Netflix-768x1075.jpg" alt="">
+                        <p class="texto">O Projeto Adam</p>
+                    </div>
+                    <div>
+                        <img src="https://br.web.img2.acsta.net/pictures/15/12/07/20/58/133341.jpg" alt="">
+                        <p class="texto">Jogos Vorazes: A Esperança</p>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/9f/Thor_Poster.jpg/250px-Thor_Poster.jpg" alt="">
+                        <p class="texto">Thor</p>
+                    </div>
+                    -->
+                </div>
+                <div class="botaoroll">
+                    <button class="roll"> > </button>
+                </div>
+                <script src="js/index.js?n=1"></script> <!--?n=1 para gerar versões, mudar o número-->
+            </div>
+        </main>
+    </body>
+</html>

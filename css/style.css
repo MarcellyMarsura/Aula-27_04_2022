@@ -1,0 +1,122 @@
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #000000;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #d40505;
+    margin-top: 1vh;
+
+}
+
+body{
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    background-image: linear-gradient(to bottom, #00000079, #000000), url(https://i2p5c7k3.rocketcdn.me/wp-content/uploads/2021/10/The-Batman-Filme-2022.jpg);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    border: #000000;
+}
+
+#nome, #link {
+    width: 30rem;
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+#botao {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: #d40505;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #970000;
+}
+
+.botao:active{
+    background-color: #fc0606;
+}
+
+.catalogo{
+    height: 290px;
+    display: block;
+}
+#catalogo-filmes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#catalogo-filmes img{
+
+    max-width: 10rem;
+    margin: 1rem;
+
+}
+
+#catalogo-filmes img:hover{
+    max-width: 10.5rem;
+    transition-duration: 0.5s;
+    
+}
+
+.botaoroll {
+    
+    display: flex;
+    
+    justify-content: flex-end;  
+}
+
+.roll{
+    font-size: 4rem;
+    position: absolute;
+    top: 33rem;
+    color: #ffffff;
+    padding: 3rem 1rem 3rem 0.5rem;
+    background-color: #000000b4;
+    border-style: hidden;
+}
+
+.roll:hover{
+    background-color: #0000008f;
+}
+.roll:active{
+    background-color: #000000be;
+}
+
+.texto {
+    text-align: center;
+    max-width: 10.5rem;
+    margin: 1rem;
+}
