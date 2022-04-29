@@ -36,14 +36,19 @@ botaoCadastrar.onclick(cadastrar());
     let catalogo = document.querySelector('#catalogo-filmes');
     let i = 0;
     let erro = document.querySelector('#erro');
-
-    for(i; i < listaDeFilmes.length; i++){
-        catalogo.innerHTML += `<div>
-            <img src=${listaDeFilmes[i]}>
-            <p class="texto">${listaDeTitulos[i]}</p>
-        </div>
-        `
+    atualizarLista(0);
+    function atualizarLista(numero){
+        catalogo.innerHTML = '';
+        for(numero; numero < listaDeFilmes.length; numero++){
+            catalogo.innerHTML += `<div>
+                <img src=${listaDeFilmes[numero]}>
+                <p class="texto">${listaDeTitulos[numero]}</p>
+            </div>
+            `
+            
+        }
     }
+    
 
     let filmeRepetido = true;
 
@@ -58,5 +63,18 @@ botaoCadastrar.onclick(cadastrar());
         else{
             listaDeFilmes.push(novoFilme);
             listaDeTitulos.push(novoTitulo);
+            atualizarLista(0);
+            erro.innerHTML = '';
         }
+        document.querySelector('#link').value = '';
+        document.querySelector('#nome').value = '';
+    }
+
+    let b = 0;
+    function mover() {
+        let n = (b + 1) % listaDeFilmes.length;
+        
+        atualizarLista(n);
+        b++;
+
     }
