@@ -1,19 +1,3 @@
-/*
-var botaoCadastrar = document.getElementById("botao");
-
-function cadastrar(){
-    let filme = document.getElementsById("nome");
-    let link = document.getElementById("link");
-
-    if(filme.value === ""){
-        console.error("Nome inválido");
-    }
-
-}
-
-
-botaoCadastrar.onclick(cadastrar());
-*/
 
     let listaDeFilmes = [
         'https://br.web.img3.acsta.net/pictures/14/08/11/13/34/537036.jpg',
@@ -55,9 +39,8 @@ botaoCadastrar.onclick(cadastrar());
     function cadastrar() {
         let novoFilme = document.querySelector('#link').value;
         let novoTitulo = document.querySelector('#nome').value;
-        
-        if(listaDeFilmes.includes(novoTitulo))
-        {
+
+        if(listaDeFilmes.includes(novoTitulo)){
             erro.innerHTML = `Filme ${novoFilme} já cadastrado`;
         }
         else{
@@ -70,11 +53,17 @@ botaoCadastrar.onclick(cadastrar());
         document.querySelector('#nome').value = '';
     }
 
-    let b = 0;
-    function mover() {
-        let n = (b + 1) % listaDeFilmes.length;
-        
+    var n = 0;
+    function moverDireita() {
+        n = (n + 1) % listaDeFilmes.length;
         atualizarLista(n);
-        b++;
-
     }
+
+    function moverEsquerda(){
+        if((k = (n - 1) % listaDeFilmes.length) >= 0)
+        {
+            n = k;
+            atualizarLista(n);
+        }
+    }
+

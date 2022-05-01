@@ -7,7 +7,7 @@ header {
     top:0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 0;
 }
 
 header h1 {
@@ -31,6 +31,7 @@ body{
     font-family: "Roboto Mono", monospace;
     overflow-x: hidden;
     text-align: center;
+    margin: 0 0 0 0;
 }
 
 
@@ -41,8 +42,14 @@ body{
     align-items: center;
     text-align: center;
     margin-top: 5rem;
-    border: #000000;
-    background-color: #000000;
+}
+
+.box{
+    background-color: #00000090;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 1rem;
 }
 
 #nome, #link {
@@ -73,11 +80,16 @@ body{
 .catalogo{
     height: 290px;
     display: block;
+
+
 }
 #catalogo-filmes{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    position: sticky;
+    z-index: 1;
+    
 }
 #catalogo-filmes img{
 
@@ -89,28 +101,37 @@ body{
 #catalogo-filmes img:hover{
     max-width: 10.5rem;
     transition-duration: 0.5s;
-    
+
 }
 
 .botaoroll{
     display: flex;
     justify-content: space-between;
 }
+
 #roll, #rollD{
+    transition-duration: 0.5s;
     font-size: 4rem;
-    color: #ffffff;
+    opacity: 0%;
     position: relative;
     top:  -15rem;
-    padding: 3rem 1rem 3rem 0.5rem;
+    height: 19rem;
     background-color: #000000b4;
+    color: #ffffff;
     border-style: hidden;
+    border-radius: 0.5rem;
+    z-index: 2;
 }
 
 #roll:hover, #rollD:hover{
+    
     background-color: #0000008f;
+    
+    opacity: 100%;
 }
 #roll:active,  #rollD:active{
-    background-color: #000000be;
+    background-color: #000000f5;
+
 }
 
 .texto {
